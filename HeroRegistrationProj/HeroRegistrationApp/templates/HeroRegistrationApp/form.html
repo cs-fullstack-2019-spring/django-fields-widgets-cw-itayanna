@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply Here</title>
+</head>
+<body>
+
+<header><h1>City Residencey</h1></header>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>Submit</button>
+</form>
+
+<footer><p>official city council site</p></footer>
+</body>
+</html>
